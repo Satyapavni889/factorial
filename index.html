@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    <div id="main">
+    <h1 id="ip1">Factorial Numbers</h1>
+    <h2 id="ip2">Enter a number</h2>
+    <input id="inp1" placeholder="Enter number">
+    <h2 id="ip3">Factorial of a number</h2>
+    <input id="inp2" placeholder="Factorial of number"><br><br>
+    <button id="ip4" style="background-color: darkolivegreen;">Submit</button></div>
+    <script>
+        let getmain=document.getElementById("main");
+        getmain.style.border="1px solid"
+        getmain.style.height="400px"
+        getmain.style.width="400px"
+        getmain.style.textAlign="center"
+        getmain.style.backgroundColor=" rgb(208, 133, 133)"
+        getmain.style.marginLeft="550px"
+        getmain.style.marginTop="100px"
+        getmain.style.borderRadius="20px"
+
+        let getip1=document.getElementById("ip1")
+
+        let getip2=document.getElementById("ip2")
+
+        let getip3=document.getElementById("ip3")
+
+        let getip4=document.getElementById("ip4")
+
+        let getinp1=document.getElementById("inp1")
+        getinp1.style.borderRadius="10px"
+
+        let getinp2=document.getElementById("inp2")
+        getinp2.style.borderRadius="10px"
+
+        ip4.addEventListener("click",()=>{
+            let num=parseInt(inp1.value);
+            let factorial=1;
+            for(let i=2;i<=num;i++){
+                factorial*=i;
+            }
+            inp2.value=factorial;
+        })
+    </script>
+</body>
+</html>
